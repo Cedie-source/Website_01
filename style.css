@@ -82,9 +82,11 @@ header .navbar {
 }
 
 .navbar .nav-logo .logo-text{
-    color: var(--white-color);
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-semibold);
+    color: #AA336A; /* Lavender */
+    font-family: "Miniver", cursive;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    font-size: 2.1rem;
+    
 }
 
 .navbar .nav-menu {
@@ -112,20 +114,45 @@ header .navbar {
     display:flex;
     align-items: center;
     min-height: 100vh;
-    color:var(--white-color);
+    color: var(--white-color);
     justify-content: space-between;
 }
 
 .hero-section .hero-details .title{
     font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+    font-family: "Miniver", sans-serif;
+}
+
+.hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: black;
+}
+
+.hero-section .hero-details .description {
+    max-width:  70%;
+    margin: 24px 0 40px;
+    font-size: var(--font-size-m);
+    color: black;
+
+}
+
+.hero-section .hero-details .button {
+    padding: 10px 26px;
+    color: var(--primary-color);
+    border-radius: var(var(--border-radius-m));
+    background: var(--secondary-color);
+    margin-right: 10px;
+    font-weight: var(--font-weight-medium);
 }
 
 .hero-image-wrapper {
-    max-width: 400px; /* or whatever you like */
+    max-width: 500px; /* or whatever you like */
+    margin-right: 30px;
   }
+  * optional for round corners */
   
-  .hero-image {
-    width: 45%;
-    height: auto;
-    border-radius: var(--border-radius-s); /* optional for round corners */
-  }
+
