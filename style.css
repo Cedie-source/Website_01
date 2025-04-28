@@ -62,6 +62,24 @@ img {
     max-width: var(--site-max-widh);
 
 }
+
+.section-title {
+    text-align: center;
+    padding: 60px 0 100;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+}
+
+.section-title::after{
+    content: "" ;
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+}
+
 a {
     text-decoration: none;
 }
@@ -186,8 +204,34 @@ header .navbar {
     max-width: 500px; /* or whatever you like */
     margin-right: 30px;
   }
-  /* optional for round corners */
+/* ABOUT section styling*/
+  .about-section {
+    padding: 120px 0;
+    background: var(--light-pink-color);
+  }
+
+  .about-section .section-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
   
+  .about-section .about-image-wrapper .about-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+  }
+
+  .about-section .about-details .sect
+  
+  .about-section .about-details .text {
+    line-height: 30px;
+    margin: 50px 0 30px; 
+    text-align: center;
+    font-size: var(--font-size-m);
+  }
 
   /* left side menu */
   @media screen and (max-width: 900px) {
@@ -268,7 +312,7 @@ header .navbar {
     }
 
     .hero-section .hero-details .buttons {
-        justify-content: centercd";
+        justify-content: center;
 
     }
 
