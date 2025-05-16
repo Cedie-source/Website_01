@@ -325,6 +325,7 @@ header .navbar {
   }
 
   .testimonials-section .testimonials {
+    user-select: none;
     display: flex;
     padding: 35px;
     text-align: center;

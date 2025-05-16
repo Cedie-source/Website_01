@@ -8,9 +8,13 @@ menuOpenButton.addEventListener("click", () => {
 
 });
 
+     //Close menu when click the closed button//
 menuCloseButton.addEventListener("click", () => menuOpenButton.click());
 
-navLinks.forEach(link =>)
+    //Close menu when the navlink is clicked//
+navLinks.forEach(link => {
+  link.addEventListener("click", () => menuOpenButton.click());
+});
 
 // Initialize Swiper //
 const swiper = new Swiper('.slider-wrapper', {
